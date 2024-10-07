@@ -69,3 +69,9 @@ void main() {
 
 
 //this structue used in the complex app or the big project and the falctory method class was write in the anothor file 
+
+/*
+ - in factory method :
+  - the object dont have to know whicht type will be return 
+  - it is lossely loclise the logic to ruter th object 
+ */
