@@ -1,4 +1,10 @@
 
+enum EngineerType{
+  entc,
+  computer,
+  civil,
+  chemical
+}
 
 abstract class Engineer {
   void job();
@@ -7,16 +13,17 @@ abstract class Engineer {
 
 // here this is antor way to create the factor method by using antor class and writing the static method on it so we can get the respecte child 
 class FactoryMethod {
-  static Engineer getEnginer(Engineer type) {
-    if (type is Entc) {
-      return Entc();
-    } else if (type is Chemical) {
-      return Chemical();
-    } else if (type is Computer) {
-      return Computer();
-    } else {
-      // return Engineer();  //we can not crete the object of the abstract class
-      return Civil();
+  static Engineer getEnginer(EngineerType type) {
+    switch(type){
+
+      case EngineerType.entc:
+        return Entc();
+      case EngineerType.chemical:
+        return Chemical();
+      case EngineerType.computer:
+        return Computer();
+      default: 
+         return Civil();
     }
   }
 }
@@ -51,10 +58,12 @@ class Civil implements Engineer {
 
 void main() {
 
- Engineer eng1 = FactoryMethod.getEnginer(Computer());
+ Engineer eng1 = FactoryMethod.getEnginer(EngineerType.entc);
  eng1.job();
 
- Engineer eng2 = FactoryMethod.getEnginer(Entc());
+ Engineer eng2 = FactoryMethod.getEnginer(EngineerType.chemical);
+ eng2.job();
+ Engineer eng3 = FactoryMethod.getEnginer(EngineerType.civil);
  eng2.job();
 }
 
