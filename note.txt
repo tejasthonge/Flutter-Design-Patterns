@@ -1,0 +1,49 @@
+
+
+What is Design pattern:
+
+    -
+
+
+    Types :
+        1 Creational
+            -its an way of creating the objects
+            -mens at the time creating the object we are desided the how the object was created 
+            -
+
+        2 Structural 
+        3 Behavioral 
+    thrier are 23 Design Patterns are present 
+    Dry Prinsiple:
+
+
+#Types of Design Patterns:
+    #1 Creational :
+        -1 Singleton
+        -2 Factory
+        -3 Abstract Factory
+        -4 Builder
+        -5 Prototype
+    #2 Structural :
+        - 6 Adapter
+        - 7 Composite
+        - 9 Proxy
+        -10 Facade
+        -11 Bridge
+        -12 Decorator
+    #3 Behavioral :
+        -13 Template Method
+        -14 Mediator
+        -15 Chain of Responsiblity
+        -16 Observer
+        -17 Strategy
+        -18 Command
+        -19 State 
+        -20 Visitor
+        -21 Iterator
+        -22 Interpeter
+        -23 Memento
+1.Factory Method Patterns :
+    Define an interface for createing an object but we lat subclass decide which subclass to instantiate  
+
+    - it is an Creational Design pattern 
