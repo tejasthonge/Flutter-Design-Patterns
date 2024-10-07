@@ -5,12 +5,9 @@ enum EngineerType{
   civil,
   chemical
 }
-
 abstract class Engineer {
   void job();
 }
-
-
 // here this is antor way to create the factor method by using antor class and writing the static method on it so we can get the respecte child 
 class FactoryMethod {
   static Engineer getEnginer(EngineerType type) {

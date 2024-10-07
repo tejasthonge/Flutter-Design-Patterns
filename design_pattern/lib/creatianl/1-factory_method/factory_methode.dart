@@ -14,32 +14,25 @@
 
 */
 
-
-abstract class Employee{
-
+abstract class Employee {
   void work();
 
-
- factory Employee(String type){
-    
-    switch(type){
-
+  factory Employee(String type) {
+    switch (type) {
       case 'Manger':
         return Manger();
 
       case 'UiUxDesigner':
         return UiUxDesigner();
-      
 
       case 'Tester':
         return Tester();
-      
+
       default:
         return Developer();
     }
   }
-  
-  }
+}
 
 class Developer implements Employee {
   @override
@@ -68,8 +61,6 @@ class Tester implements Employee {
     print("Testing the user interface and the app");
   }
 }
-
-
 
 void main() {
   Employee employee1 = Employee("UiUxDesigner");
